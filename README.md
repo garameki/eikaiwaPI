@@ -5,7 +5,9 @@ Usage
 
 ENVIRONMENT  
 ============  
+	Linux on raspberry PI 3 B+
 	sudo apt-get lame
 	sudo apt-get mplayer
+	sudo apt-get python3
 
 
