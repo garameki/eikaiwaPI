@@ -10,4 +10,7 @@ ENVIRONMENT
 	sudo apt-get mplayer
 	sudo apt-get python3
 
-
+LOG  
+===
+WAVファイルに変更
+	mp3は再生が不安定なので
