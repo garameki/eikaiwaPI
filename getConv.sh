@@ -3,7 +3,7 @@ echo $0
 echo $1
 
 echo 192.168.3.2から$1.mp4をgetします。
-python3 getMp4.py $1
+python3 getMp4FromWindows.py $1
 if [ $? -ne 0 ]; then
 	echo エラーが発生しました
 else
