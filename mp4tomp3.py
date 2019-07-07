@@ -57,7 +57,8 @@ def main(indir, outdir):
     # convert all unconverted files
     for filename in files:
         print("-- converting {0}/{2}.mp4 to {1}/{2}.mp3 --".format(indir, outdir, filename))
-        call(["mplayer", "-novideo", "-nocorrect-pts", "-ao", "pcm:waveheader:file=" + outdir + "/" + filename + ".wav", indir + "/" + filename + ".mp4"])
+        call(["mplayer", "-af","resample=8000:0:0","-novideo", "-nocorrect-pts", "-ao", "pcm:waveheader:file=" + outdir + "/" + filename + ".wav", indir + "/" + filename + ".mp4"])
+#        call(["mplayer", "-novideo", "-nocorrect-pts", "-ao", "pcm:waveheader:file=" + outdir + "/" + filename + ".wav", indir + "/" + filename + ".mp4"])
         call(["lame", "-v", outdir + "/" + filename + ".wav", outdir + "/" + filename + ".mp3"])
 #        call(["mplayer", "-novideo", "-nocorrect-pts", "-ao", "pcm:waveheader", indir + "/" + filename + ".mp4"])
 #        call(["lame", "-v", "audiodump.wav", outdir + "/" + filename + ".mp3"])
