@@ -13,7 +13,7 @@ else
 	 if [ $? -ne 0 ]; then
 	 	echo エラーが発生しました。
 	else
-		rm oto/$1.mp4
+#		rm oto/$1.mp4
 		echo 完了しました。
 	fi
 fi
